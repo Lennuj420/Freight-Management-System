@@ -1,0 +1,134 @@
+/*side nav fix*/
+/*
+#side-nav{
+    margin-top: 64px;
+}
+*/
+.login {
+    margin-top: 20%;
+    margin-bottom: 70px;
+}
+.btn-extended {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+.card-panel{
+    /*padding: 5px;*/
+}
+.background-round {
+    background-color: rgba(0, 0, 0, 0.18);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.avatar-status {
+    position: relative;
+    display: inline-block;
+    line-height: 50px;
+    width: 30px;
+    white-space: nowrap;
+    border-radius: 1000px;
+    vertical-align: bottom;
+}
+
+.avatar-status img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background: #e6e6e6;
+    border: 0 none;
+    border-radius: 1000px;
+}
+
+.collection-item .row{
+    margin-bottom: 0px;
+}
+
+/*
+#profile-page-header .card-profile-image {
+    width: 110px;
+    position: absolute;
+    top: 190px;
+    z-index: 1;
+    left: 40px;
+    cursor: pointer;
+    margin: 0;
+}*/
+
+.profile-card-bg{
+    height: 300px;
+}
+
+.profile-card-img{
+    width: 110px;
+    position: relative;
+    margin-top: -25%;
+    z-index: 1;
+    left: 40px;
+    /*cursor: pointer;*/
+}
+
+.profile-card-with-doughnut-chart-img{
+    width: 110px;
+    position: relative;
+    margin-top: -25%;
+    z-index: 1;
+    left: 40px; 
+}
+
+/*
+.medium2small {
+    font-size: 0.9rem !important;
+}*/
+
+/* add modal sizes */
+/* .modal-lg{
+  width: 80%;
+}
+.modal-md{
+  width: 60%
+}
+.modal-sm{
+  width: 40%;
+} */
+/* .modal {
+  position: relative;
+  width: auto;
+  max-width: 600px;
+  margin: 10px;
+} */
+/* .modal-sm {
+  max-width: 300px;
+}
+.modal-lg {
+  max-width: 900px;
+}
+@media (min-width: 768px) {
+  .modal {
+    margin: 30px auto;
+  }
+}
+@media (min-width: 320px) {
+  .modal-sm {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 620px) {
+  .modal {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .modal-lg {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 920px) {
+  .modal-lg {
+    margin-right: auto;
+    margin-left: auto;
+  }
+} */

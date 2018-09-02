@@ -1,0 +1,73 @@
+/*==============================*/
+/*========= Data tables ========*/
+/*==============================*/
+
+table.dataTable {
+	width: 100% !important;
+	margin-bottom: 0;
+}
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled {
+}
+table.dataTable thead .sorting_asc:after {
+	content: "\f0de";
+	float: right;
+	font-family: fontawesome;
+}
+table.dataTable thead .sorting_desc:after {
+	content: "\f0dd";
+	float: right;
+	font-family: fontawesome;
+}
+table.dataTable thead .sorting:after {
+	content: "\f0dc";
+	float: right;
+	font-family: fontawesome;
+	color: rgba(0, 0, 0, 0.3);
+}
+.dataTables_filter {
+	float: right;
+	width: auto;
+}
+.dataTables_filter input {
+	margin-left: 15px;
+	width: auto;
+	margin-bottom: 0;
+}
+.dataTables_length input, .dataTables_length select {
+	margin: 0 15px;
+	width: auto;
+	display: inline-block;
+}
+.dataTables_paginate .pagination {
+	float: right;
+}
+.dataTables_paginate .pagination, .dataTables_info {
+	margin: 10px 0 !important;
+	line-height: 40px
+}
+/* .gridpic {
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+	border-radius: 30px;
+	vertical-align: middle;
+} */
+table.dataTable thead tr th, table.dataTable tbody tr td {
+	/* padding: 5px 15px;
+	line-height: 40px; */
+}
+
+/* for search filter and entries to show */
+.col-sm-6 {
+	width: 50%;
+	float: left;
+}
+.pagination li {
+	height: 30px;
+	line-height: 30px;
+	margin: 0 3px;
+}
+
+.pagination li.active {
+	/* background-color: #0d47a1; */
+}

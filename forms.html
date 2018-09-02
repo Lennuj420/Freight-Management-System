@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="css/material-icons.css" rel="stylesheet">
+    <!--Import Font Awesome Font-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!-- dropify for image upload -->
+    <!-- <link rel="stylesheet" href="plugins/dropify/dropify.css"> -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.css'/>
+    
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maintenance</title>
+</head>
+
+<body class="grey lighten-5">
+    <!--nav-bar-->
+    <nav class="green lighten-1">
+        <div class="nav-wrapper">
+            <a href="#" class="button-collapse show-on-large" data-activates="side-nav">
+                <i class="material-icons">menu</i>
+            </a>
+            <a href="#" class="brand-logo">Material Admin</a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="index.html" active>Dashboard</a>
+                </li>
+                <li>
+                    <a href="post.html">Posts</a>
+                </li>
+                <li>
+                    <a href="categories.html">Categories</a>
+                </li>
+                <li>
+                    <a href="comments.html">Comments</a>
+                </li>
+                <li>
+                    <a href="users.html">Users</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--side-nav-->
+    <ul id="side-nav" class="side-nav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="img/bg-green-poly.jpg " alt="" class="responsive-img">
+                </div>
+                <div class="row">
+
+                    <div class="col s4 m4 l4 xl4">
+                        <img src="./img/user.png" alt="" class="circle">
+
+                    </div>
+                    <div class="col s8 m8 l8 xl8">
+                        <span class="name white-text">
+                            Junnel Doe
+                        </span>
+                        <span class="email white-text">
+                            junnel@email.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="active">
+            <a href="index.html">
+                <i class="material-icons">dashboard</i> Dashboard
+            </a>
+        </li>
+        <li class="">
+            <a href="maintenance.html">
+                <!--<i class="fa fa-wrench"></i>-->
+                <i class="material-icons">build</i>
+                Maintenance
+            </a>
+        </li>
+        <li>
+            <a href="categories.html">
+                <i class="material-icons">folder</i> Categories
+            </a>
+        </li>
+        <li>
+            <a href="comments.html">
+                <i class="material-icons">comment</i> Comments
+            </a>
+        </li>
+        <li>
+            <a href="users.html">
+                <i class="material-icons">people</i> Users
+            </a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a href="#">
+                <i class="material-icons">vpn_key</i> Logout
+            </a>
+        </li>
+    </ul>
+
+    <!-- floating action btn -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large green darken-2">
+           <!-- <i class="fa fa-plus"></i> -->
+            <!--<i class="material-icons">add</i>-->
+            <i class="material-icons">apps</i>
+        </a>
+        <ul>
+            <li>
+                <a href="#post-modal" class="btn-floating blue darken-2 modal-trigger">
+                      <!--<i class="material-icons">mode_edit</i>-->
+                    <!-- <i class="material-icons tooltipped" data-position="left" data-tooltip="add leave application">note_add</i> -->
+                    <!-- <i class="material-icons tooltipped" data-position="left" data-tooltip="add leave application">description</i> -->
+                    <i class="material-icons tooltipped" data-position="left" data-tooltip="add billing">assignment</i>
+
+
+                </a>
+            </li>
+          <li>
+          <a href="#post-modal" class="btn-floating blue darken-2 modal-trigger">
+                    <!--<i class="material-icons">mode_edit</i>-->
+                  <!-- <i class="material-icons tooltipped" data-position="left" data-tooltip="add leave application">note_add</i> -->
+                  <i class="material-icons tooltipped" data-position="left" data-tooltip="add leave application">local_hotel</i>
+              </a>
+          </li>
+          <li>
+              <a href="#post-modal" class="btn-floating blue darken-2 modal-trigger">
+                        <!--<i class="material-icons">mode_edit</i>-->
+                  <!-- <i class="material-icons tooltipped" data-position="left" data-tooltip="add maintenance">build</i> -->
+                  <i class="material-icons tooltipped" data-position="left" data-tooltip="add maintenance">settings</i>
+              </a>
+          </li>
+          <li>
+              <a href="#post-modal" class="btn-floating blue darken-2 modal-trigger">
+                  <!--<i class="material-icons">mode_edit</i>-->
+                  <!-- <i class="material-icons tooltipped" data-position="left" data-tooltip="add booking">local_library</i> -->
+                  <i class="material-icons tooltipped" data-position="left" data-tooltip="add booking">import_contacts</i>
+              </a>
+          </li>
+          <li>
+              <a href="#modal-add-fleet" class="btn-floating blue darken-2 waves-effect waves-light modal-trigger">
+                  <i class="material-icons tooltipped" data-position="left" data-tooltip="add fleet">local_shipping</i>
+              </a>
+          </li>
+          <li>
+              <a href="#modal-add-employee" class="btn-floating blue darken-2 waves-effect waves-light modal-trigger">
+                  <!--<i class="material-icons">supervisor_account</i>-->
+                  <i class="material-icons tooltipped" data-position="left" data-tooltip="add employee">person</i>
+              </a>
+          </li>
+        </ul>
+    </div>
+    
+    <!-- main content -->
+    <div class="container">
+        <section class="section">
+            <div class="row">
+               
+                <div class="col s12 l8 offset-l2 xl6 offset-xl3">
+                    <div class="card">
+                        <div class="card-content">
+                           <div class="row">
+                               <span class="card-title">Add Fleet Form</span>
+                           </div>
+                            <form action="">
+                                <div class="input-field">
+                                    <input type="text" id="title">
+                                    <label>Plate Number</label>
+                                    <!--TODO: transform input to uppercase-->
+                                </div>
+                                <div class="input-field ">
+                                    <select>
+                                        <option value=" " disabled selected>Select Truck Type</option>
+                                        <option value="1 ">{{6 Wheeler}}</option>
+                                        <option value="2 ">{{Forward}}</option>
+                                        <option value="3 " >{{10 Wheeler}}</option>
+                                        <option value="4 ">{{AUV}}</option>
+                                    </select>
+                                    <label>Truck Type</label>
+                                    <!--todo: get select option from database-->
+                                    <!--todo: convert to search select-->
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" id="title">
+                                    <label>Engine</label>
+                                    <!--TODO: transform input to uppercase-->
+                                    <!--convert to search select-->
+                                </div>
+                                <div class="input-field ">
+                                    <select>
+                                        <option value=" " disabled selected>Select Owner</option>
+                                        <option value="1 ">LERAN</option>
+                                        <option value="2 ">ONG</option>
+                                        <option value="3 " >SIPOCOT</option>
+                                        <option value="4 ">BOLALIN</option>
+                                    </select>
+                                    <label>Owner</label>
+                                    <!--todo: get select option from database-->
+                                    <!--todo: convert to search select-->
+                                    <!--todo: give ability to add owner if doesnt exist-->
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-action right-align">
+                            <button class="btn green ">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l8 offset-l2 xl6 offset-xl3">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="row">
+                                <span class="card-title">Add Item</span>
+                            </div>
+                            <form action="">
+                                <div class="input-field">
+                                    <input type="text" id="">
+                                    <label>Name</label>
+                                    <!--TODO: transform input to uppercase-->
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" id="">
+                                    <label>Description</label>
+                                    <!--TODO: transform input to uppercase-->
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" id="">
+                                    <label>Starting Quantity</label>
+                                    <!--TODO: transform input to uppercase-->
+                                </div>
+                                <div class="input-field ">
+                                    <select>
+                                        <option value=" " disabled selected>Select Category</option>
+                                        <option value="1 ">Tires</option>
+                                        <option value="2 ">Battery</option>
+                                        <option value="3 " >Fittings</option>
+                                        <option value="4 ">Oring</option>
+                                    </select>
+                                    <label>Category</label>
+                                    <!--todo: get select option from database-->
+                                    <!--todo: convert to search select-->
+                                </div>
+                                <div class="input-field">
+                                    <!--<i class="prefix">&#8369;</i>-->
+                                    <input type="text" id="price" class="money" placeholder="&#8369 0.00">
+                                    <label>Price</label>
+                                    <!--TODO: transform input to uppercase-->
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-action right-align">
+                            <button class="btn green ">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l8 offset-l2 xl6 offset-xl3">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="row">
+                                <span class="card-title">Add Employee</span>
+                            </div>
+                            <form action="">
+                                <div class="input-field">
+                                    <input type="text" id="">
+                                    <label>First Name</label>
+                                    <!--TODO: transform input to uppercase-->
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" id="">
+                                    <label>Middle Name</label>
+                                    <!--TODO: transform input to uppercase-->
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" id="">
+                                    <label>Last Name</label>
+                                    <!--TODO: transform input to uppercase-->
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" id="">
+                                    <label>Birthday</label>
+                                    <!--TODO: use momentjs to work with dates-->
+                                </div>
+                                <div class="input-field ">
+                                    <select>
+                                        <option value=" " disabled selected>Select Type</option>
+                                        <!--disabled only it admin has the rights to see this options-->
+                                        <option value="0">IT Admin</option>
+                                        <option value="1">Owner</option>
+                                        <!--enabled options for office personels-->
+                                        <option value="2" >Office personel</option>
+                                        <option value="3">Mechanic</option>
+                                        <option value="4">Driver</option>
+                                        <option value="5">Helper</option>
+
+                                    </select>
+                                    <label>Employee Type</label>
+                                    <!--todo: get select option from database-->
+                                    <!--todo: convert to search select-->
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" id="" class="EmploymentDate">
+                                    <label>Employment Date</label>
+                                    <!--TODO: use momentjs to work with dates-->
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-action right-align">
+                            <button class="btn green ">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!--completed: create a bar graph for diesel consumption of drivers, this is computed through computed consumption every trip completed-->
+
+                <!--future: created a collection of items that need to be re ordered (only items that are consumable ex. bulb and oils)-->
+
+                <div class="col s12 l8 offset-l2 xl6 offset-xl3">
+                  <div class="card">
+                    <div class="card-content row">
+                      <div class="col s12">
+                          <span class="card-title">Add Maintenance</span>
+                        </div>
+                      <div class="col s12">
+                          <form action="">
+                              <div class="input-field ">
+                                  <select>
+                                      <option value=" " disabled selected>Select Plate No.</option>
+                                      <!--disabled only it admin has the rights to see this options-->
+                                      <option value="AAB 9497">AAB 9497</option>
+                                      <option value="NM 9179">NM 9179</option>
+                                      <!--enabled options for office personels-->
+                                      <option value="ABK 6323" >ABK 6323</option>
+                                      <option value="030105">030105</option>
+                                      <option value="030110">030110</option>
+                                      <option value="AAT4125">AAT4125</option>
+                                  </select>
+                                  <label>Plate No.</label>
+                                  <!--todo: get select option from database-->
+                                  <!--todo: convert to search select-->
+                              </div>
+                              <div class="input-field">
+                                  <input type="text" id="">
+                                  <label>Job Order Number</label>
+                                  <!--TODO: transform input to uppercase-->
+                              </div>
+                              <div class="input-field">
+                                  <input type="text" id="">
+                                  <label>Job Description</label>
+                                  <!--TODO: transform input to uppercase-->
+                              </div>
+                              <div class="input-field">
+                                  <input type="text" id="">
+                                  <label>Item 1</label>
+                                  <!--TODO: use momentjs to work with dates-->
+                              </div>
+
+                              <div class="input-field">
+                                  <input type="text" id="" class="EmploymentDate">
+                                  <label>Employment Date</label>
+                                  <!--TODO: use momentjs to work with dates-->
+                              </div>
+                          </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- modals -->
+
+    <!-- add employee modal -->
+    <div class="modal modal-fixed-footer" id="modal-add-employee">
+      <div class="modal-content">
+        <div class="col s12">
+          <h4>Add Employee</h4>
+        </div>
+        <div class="col s12">
+          <form action="" class="row">
+            <!-- todo: add image upload input here
+              *drag and drop functionality
+              *save image into uploaded directory
+              *follow this directory pattern:
+                -/uploaded/employee/{employee_no}/
+            -->
+            <div class="col s12 m3">
+              <input type="file" class="dropify" data-default-file="">
+              <!-- <label>Employee Image</label> -->
+            </div>
+            <div class="input-field col s12 m3">
+                <input type="text" id="">
+                <label>First Name</label>
+                <!--TODO: transform input to uppercase-->
+            </div>
+            <div class="input-field col s12 m3">
+                <input type="text" id="">
+                <label>Middle Name</label>
+                <!--TODO: transform input to uppercase-->
+            </div>
+            <div class="input-field col s12 m3">
+                <input type="text" id="">
+                <label>Last Name</label>
+                <!--TODO: transform input to uppercase-->
+            </div>
+            <div class="input-field col s12 m3">
+                <select>
+                    <option value=" " disabled selected>Select Type</option>
+                    <!--disabled only it admin has the rights to see this options-->
+                    <option value="0">IT Admin</option>
+                    <option value="1">Owner</option>
+                    <!--enabled options for office personels-->
+                    <option value="2" >Office personel</option>
+                    <option value="3">Mechanic</option>
+                    <option value="4">Driver</option>
+                    <option value="5">Helper</option>
+                    
+                </select>
+                <label>Employee Type</label>
+                <!--todo: get select option from database-->
+                <!--todo: convert to search select-->
+            </div>
+            <div class="input-field col s12 m3">
+              <input type="text" id="employment-date" class="date-picker">
+              <label>Employment Date</label>
+              <!--TODO: use momentjs to work with dates-->
+            </div>
+            <div class="clearfix"></div>
+            <div class="input-field col s12 m4">
+              <input type="text" id="birth-date" class="date-picker">
+              <label>Birthday</label>
+              <!--TODO: use momentjs to work with dates-->
+          </div>
+          
+        </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-red btn-flat">cancel</a>
+      <a class="modal-action modal-close waves-effect waves-red btn-flat">add</a>
+      </div>
+    </div>
+    
+    <!-- add fleet modal -->
+    <div class="modal modal-fixed-footer" id="modal-add-fleet">
+      <div class="modal-content row">
+        <div class="s12">
+          <h4>Add fleet</h4>
+        </div>
+        <div class="s12">
+            <form action="" class="row">
+              <div class="col s12 m6">
+                <input type="file" class="dropify" data-default-file="">
+                <!-- <label>Fleet Image</label> -->
+              </div>
+                <div class="com s12 m6">
+                    <div class="input-field col s12 m6">
+                        <input type="text" id="title">
+                        <label>Plate Number</label>
+                        <!--TODO: transform input to uppercase-->
+                    </div>
+                    <div class="input-field col s12 m6 ">
+                        <select>
+                            <option value=" " disabled selected>Select Truck Type</option>
+                            <option value="1 ">{{6 Wheeler}}</option>
+                            <option value="2 ">{{Forward}}</option>
+                            <option value="3 " >{{10 Wheeler}}</option>
+                            <option value="4 ">{{AUV}}</option>
+                        </select>
+                        <label>Truck Type</label>
+                        <!--todo: get select option from database-->
+                        <!--todo: convert to search select-->
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="input-field col s12 m6">
+                        <input type="text" id="title">
+                        <label>Engine</label>
+                        <!--TODO: transform input to uppercase-->
+                        <!--convert to search select-->
+                    </div>
+                    <div class="input-field col s12 m6 ">
+                        <select>
+                            <option value=" " disabled selected>Select Owner</option>
+                            <option value="1 ">LERAN</option>
+                            <option value="2 ">ONG</option>
+                            <option value="3 " >SIPOCOT</option>
+                            <option value="4 ">BOLALIN</option>
+                        </select>
+                        <label>Owner</label>
+                        <!--todo: get select option from database-->
+                        <!--todo: convert to search select-->
+                        <!--todo: give ability to add owner if doesnt exist-->
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+          <a class="modal-action modal-close waves-effect waves-red btn-flat">cancel</a>
+          <a class="modal-action modal-close waves-effect waves-red btn-flat">add</a>
+          </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/Chart 2.7.2.min.js"></script>
+    <!--<script src="js/jquery.formatter.min.js"></script>-->
+    <script src="js/jquery.inputmask.bundle.js"></script>
+    <!-- using dropify for image upload -->
+    <script src="plugins/dropify/dropify.js"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.js'></script> -->
+    <script>
+        $(document).ready(function() {
+            console.log("document ready");
+            // Custom JS & jQuery here
+            
+            //initialize side-nav
+            $(".button-collapse").sideNav();
+            
+            //initialize select
+            $("select ").material_select({
+              // container: 'body'
+            });
+            
+            
+            $(".money").inputmask("numeric", {
+                prefix: '₱ ',
+                digits: 2,
+                groupSeparator: ',',
+                //placeholder: '0.00',
+                //numericInput: true,
+                autoGroup: true,
+                rightAlign: false,
+                showMaskOnHover: false,
+                showMaskOnFocus: false
+            });
+            //todo: get the value from the input without the peso sign
+
+            $(".date-picker").pickadate({
+              selectMonths: true,
+              selectYears: 100,
+              container: 'body'
+              // closeOnSelect: true
+            });
+            //todo: use moment.js for date management
+
+            $(".modal").modal({
+              dismissible: false, // Modal can be dismissed by clicking outside of the modal
+              // opacity: .5, // Opacity of modal background
+              inDuration: 300, // Transition in duration
+              outDuration: 200, // Transition out duration
+              startingTop: '4%', // Starting top style attribute
+              endingTop: '10%', // Ending top style attribute
+
+               // todo: distuingish what button is clicked and trigger a function
+            });
+           
+           $(".dropify").dropify({
+            messages: {
+                'default': 'Upload image',
+                // 'replace': 'Drag and drop or click to replace',
+                // 'remove':  'Remove',
+                // 'error':   'Ooops, something wrong happended.'
+            }
+           });
+
+           
+
+        });
+        $(window).on("load", function() {
+            console.log("window loaded");
+            
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="css/material-icons.css" rel="stylesheet">
+    <!--Import Font Awesome Font-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- import datatables css -->
+    <link rel="stylesheet" href="plugins/rockon/datatables.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maintenance</title>
+</head>
+
+<body class="grey lighten-5">
+    <!--nav-bar-->
+    <nav class="green lighten-1">
+        <div class="nav-wrapper">
+            <a href="#" class="button-collapse show-on-large" data-activates="side-nav">
+                <i class="material-icons">menu</i>
+            </a>
+            <a href="#" class="brand-logo">Material Admin</a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="index.html" active>Dashboard</a>
+                </li>
+                <li>
+                    <a href="post.html">Posts</a>
+                </li>
+                <li>
+                    <a href="categories.html">Categories</a>
+                </li>
+                <li>
+                    <a href="comments.html">Comments</a>
+                </li>
+                <li>
+                    <a href="users.html">Users</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--side-nav-->
+    <ul id="side-nav" class="side-nav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="img/bg-green-poly.jpg " alt="" class="responsive-img">
+                </div>
+                <div class="row">
+
+                    <div class="col s4 m4 l4 xl4">
+                        <img src="./img/user.png" alt="" class="circle">
+
+                    </div>
+                    <div class="col s8 m8 l8 xl8">
+                        <span class="name white-text">
+                            Junnel Doe
+                        </span>
+                        <span class="email white-text">
+                            junnel@email.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="active">
+            <a href="index.html">
+                <i class="material-icons">dashboard</i> Dashboard
+            </a>
+        </li>
+        <li class="">
+            <a href="maintenance.html">
+                <!--<i class="fa fa-wrench"></i>-->
+                <i class="material-icons">build</i>
+                Maintenance
+            </a>
+        </li>
+        <li>
+            <a href="categories.html">
+                <i class="material-icons">folder</i> Categories
+            </a>
+        </li>
+        <li>
+            <a href="comments.html">
+                <i class="material-icons">comment</i> Comments
+            </a>
+        </li>
+        <li>
+            <a href="users.html">
+                <i class="material-icons">people</i> Users
+            </a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a href="#">
+                <i class="material-icons">vpn_key</i> Logout
+            </a>
+        </li>
+    </ul>
+
+    <!-- floating action btn -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large green darken-2">
+           <i class="fa fa-plus"></i>
+            <!--<i class="material-icons">add</i>-->
+        </a>
+        <ul>
+            <li>
+                <a href="#post-modal" class="btn-floating blue darken-2 modal-trigger">
+                    <!--<i class="material-icons">mode_edit</i>-->
+                    <i class="fa fa-book"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#category-modal" class="btn-floating blue darken-2 modal-trigger">
+                    <i class="material-icons">folder</i>
+                </a>
+            </li>
+            <li>
+                <a href="#user-modal" class="btn-floating blue darken-2 modal-trigger">
+                    <!--<i class="material-icons">supervisor_account</i>-->
+                    <i class="fa fa-user-o"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <div class="row">
+               
+                <div class="col s12 l10 offset-l1 xl8 offset-xl2">
+                    <div class="card">
+                        <div class="card-content">
+                           <div class="row">
+                               <span class="card-title">Data Table</span>
+                           </div>
+                           <table class="striped" id="my-table">
+                            <thead>
+                              <tr>
+                                <th>Header 1</th>
+                                <th>Header 2</th>
+                                <th>Header 3</th>
+                                <th>Header 4</th>
+                                <th>Header 5</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Row:1 Cell:1</td>
+                                    <td>Row:1 Cell:2</td>
+                                    <td>Row:1 Cell:3</td>
+                                    <td>Row:1 Cell:4</td>
+                                    <td>Row:1 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:2 Cell:1</td>
+                                    <td>Row:2 Cell:2</td>
+                                    <td>Row:2 Cell:3</td>
+                                    <td>Row:2 Cell:4</td>
+                                    <td>Row:2 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:3 Cell:1</td>
+                                    <td>Row:3 Cell:2</td>
+                                    <td>Row:3 Cell:3</td>
+                                    <td>Row:3 Cell:4</td>
+                                    <td>Row:3 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:4 Cell:1</td>
+                                    <td>Row:4 Cell:2</td>
+                                    <td>Row:4 Cell:3</td>
+                                    <td>Row:4 Cell:4</td>
+                                    <td>Row:4 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:5 Cell:1</td>
+                                    <td>Row:5 Cell:2</td>
+                                    <td>Row:5 Cell:3</td>
+                                    <td>Row:5 Cell:4</td>
+                                    <td>Row:5 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:6 Cell:1</td>
+                                    <td>Row:6 Cell:2</td>
+                                    <td>Row:6 Cell:3</td>
+                                    <td>Row:6 Cell:4</td>
+                                    <td>Row:6 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:7 Cell:1</td>
+                                    <td>Row:7 Cell:2</td>
+                                    <td>Row:7 Cell:3</td>
+                                    <td>Row:7 Cell:4</td>
+                                    <td>Row:7 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:8 Cell:1</td>
+                                    <td>Row:8 Cell:2</td>
+                                    <td>Row:8 Cell:3</td>
+                                    <td>Row:8 Cell:4</td>
+                                    <td>Row:8 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:9 Cell:1</td>
+                                    <td>Row:9 Cell:2</td>
+                                    <td>Row:9 Cell:3</td>
+                                    <td>Row:9 Cell:4</td>
+                                    <td>Row:9 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:10 Cell:1</td>
+                                    <td>Row:10 Cell:2</td>
+                                    <td>Row:10 Cell:3</td>
+                                    <td>Row:10 Cell:4</td>
+                                    <td>Row:10 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:11 Cell:1</td>
+                                    <td>Row:11 Cell:2</td>
+                                    <td>Row:11 Cell:3</td>
+                                    <td>Row:11 Cell:4</td>
+                                    <td>Row:11 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:12 Cell:1</td>
+                                    <td>Row:12 Cell:2</td>
+                                    <td>Row:12 Cell:3</td>
+                                    <td>Row:12 Cell:4</td>
+                                    <td>Row:12 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:13 Cell:1</td>
+                                    <td>Row:13 Cell:2</td>
+                                    <td>Row:13 Cell:3</td>
+                                    <td>Row:13 Cell:4</td>
+                                    <td>Row:13 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:14 Cell:1</td>
+                                    <td>Row:14 Cell:2</td>
+                                    <td>Row:14 Cell:3</td>
+                                    <td>Row:14 Cell:4</td>
+                                    <td>Row:14 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:15 Cell:1</td>
+                                    <td>Row:15 Cell:2</td>
+                                    <td>Row:15 Cell:3</td>
+                                    <td>Row:15 Cell:4</td>
+                                    <td>Row:15 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:16 Cell:1</td>
+                                    <td>Row:16 Cell:2</td>
+                                    <td>Row:16 Cell:3</td>
+                                    <td>Row:16 Cell:4</td>
+                                    <td>Row:16 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:17 Cell:1</td>
+                                    <td>Row:17 Cell:2</td>
+                                    <td>Row:17 Cell:3</td>
+                                    <td>Row:17 Cell:4</td>
+                                    <td>Row:17 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:18 Cell:1</td>
+                                    <td>Row:18 Cell:2</td>
+                                    <td>Row:18 Cell:3</td>
+                                    <td>Row:18 Cell:4</td>
+                                    <td>Row:18 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:19 Cell:1</td>
+                                    <td>Row:19 Cell:2</td>
+                                    <td>Row:19 Cell:3</td>
+                                    <td>Row:19 Cell:4</td>
+                                    <td>Row:19 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:20 Cell:1</td>
+                                    <td>Row:20 Cell:2</td>
+                                    <td>Row:20 Cell:3</td>
+                                    <td>Row:20 Cell:4</td>
+                                    <td>Row:20 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:21 Cell:1</td>
+                                    <td>Row:21 Cell:2</td>
+                                    <td>Row:21 Cell:3</td>
+                                    <td>Row:21 Cell:4</td>
+                                    <td>Row:21 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:22 Cell:1</td>
+                                    <td>Row:22 Cell:2</td>
+                                    <td>Row:22 Cell:3</td>
+                                    <td>Row:22 Cell:4</td>
+                                    <td>Row:22 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:23 Cell:1</td>
+                                    <td>Row:23 Cell:2</td>
+                                    <td>Row:23 Cell:3</td>
+                                    <td>Row:23 Cell:4</td>
+                                    <td>Row:23 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:24 Cell:1</td>
+                                    <td>Row:24 Cell:2</td>
+                                    <td>Row:24 Cell:3</td>
+                                    <td>Row:24 Cell:4</td>
+                                    <td>Row:24 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:25 Cell:1</td>
+                                    <td>Row:25 Cell:2</td>
+                                    <td>Row:25 Cell:3</td>
+                                    <td>Row:25 Cell:4</td>
+                                    <td>Row:25 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:26 Cell:1</td>
+                                    <td>Row:26 Cell:2</td>
+                                    <td>Row:26 Cell:3</td>
+                                    <td>Row:26 Cell:4</td>
+                                    <td>Row:26 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:27 Cell:1</td>
+                                    <td>Row:27 Cell:2</td>
+                                    <td>Row:27 Cell:3</td>
+                                    <td>Row:27 Cell:4</td>
+                                    <td>Row:27 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:28 Cell:1</td>
+                                    <td>Row:28 Cell:2</td>
+                                    <td>Row:28 Cell:3</td>
+                                    <td>Row:28 Cell:4</td>
+                                    <td>Row:28 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:29 Cell:1</td>
+                                    <td>Row:29 Cell:2</td>
+                                    <td>Row:29 Cell:3</td>
+                                    <td>Row:29 Cell:4</td>
+                                    <td>Row:29 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:30 Cell:1</td>
+                                    <td>Row:30 Cell:2</td>
+                                    <td>Row:30 Cell:3</td>
+                                    <td>Row:30 Cell:4</td>
+                                    <td>Row:30 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:31 Cell:1</td>
+                                    <td>Row:31 Cell:2</td>
+                                    <td>Row:31 Cell:3</td>
+                                    <td>Row:31 Cell:4</td>
+                                    <td>Row:31 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:32 Cell:1</td>
+                                    <td>Row:32 Cell:2</td>
+                                    <td>Row:32 Cell:3</td>
+                                    <td>Row:32 Cell:4</td>
+                                    <td>Row:32 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:33 Cell:1</td>
+                                    <td>Row:33 Cell:2</td>
+                                    <td>Row:33 Cell:3</td>
+                                    <td>Row:33 Cell:4</td>
+                                    <td>Row:33 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:34 Cell:1</td>
+                                    <td>Row:34 Cell:2</td>
+                                    <td>Row:34 Cell:3</td>
+                                    <td>Row:34 Cell:4</td>
+                                    <td>Row:34 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:35 Cell:1</td>
+                                    <td>Row:35 Cell:2</td>
+                                    <td>Row:35 Cell:3</td>
+                                    <td>Row:35 Cell:4</td>
+                                    <td>Row:35 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:36 Cell:1</td>
+                                    <td>Row:36 Cell:2</td>
+                                    <td>Row:36 Cell:3</td>
+                                    <td>Row:36 Cell:4</td>
+                                    <td>Row:36 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:37 Cell:1</td>
+                                    <td>Row:37 Cell:2</td>
+                                    <td>Row:37 Cell:3</td>
+                                    <td>Row:37 Cell:4</td>
+                                    <td>Row:37 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:38 Cell:1</td>
+                                    <td>Row:38 Cell:2</td>
+                                    <td>Row:38 Cell:3</td>
+                                    <td>Row:38 Cell:4</td>
+                                    <td>Row:38 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:39 Cell:1</td>
+                                    <td>Row:39 Cell:2</td>
+                                    <td>Row:39 Cell:3</td>
+                                    <td>Row:39 Cell:4</td>
+                                    <td>Row:39 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:40 Cell:1</td>
+                                    <td>Row:40 Cell:2</td>
+                                    <td>Row:40 Cell:3</td>
+                                    <td>Row:40 Cell:4</td>
+                                    <td>Row:40 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:41 Cell:1</td>
+                                    <td>Row:41 Cell:2</td>
+                                    <td>Row:41 Cell:3</td>
+                                    <td>Row:41 Cell:4</td>
+                                    <td>Row:41 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:42 Cell:1</td>
+                                    <td>Row:42 Cell:2</td>
+                                    <td>Row:42 Cell:3</td>
+                                    <td>Row:42 Cell:4</td>
+                                    <td>Row:42 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:43 Cell:1</td>
+                                    <td>Row:43 Cell:2</td>
+                                    <td>Row:43 Cell:3</td>
+                                    <td>Row:43 Cell:4</td>
+                                    <td>Row:43 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:44 Cell:1</td>
+                                    <td>Row:44 Cell:2</td>
+                                    <td>Row:44 Cell:3</td>
+                                    <td>Row:44 Cell:4</td>
+                                    <td>Row:44 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:45 Cell:1</td>
+                                    <td>Row:45 Cell:2</td>
+                                    <td>Row:45 Cell:3</td>
+                                    <td>Row:45 Cell:4</td>
+                                    <td>Row:45 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:46 Cell:1</td>
+                                    <td>Row:46 Cell:2</td>
+                                    <td>Row:46 Cell:3</td>
+                                    <td>Row:46 Cell:4</td>
+                                    <td>Row:46 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:47 Cell:1</td>
+                                    <td>Row:47 Cell:2</td>
+                                    <td>Row:47 Cell:3</td>
+                                    <td>Row:47 Cell:4</td>
+                                    <td>Row:47 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:48 Cell:1</td>
+                                    <td>Row:48 Cell:2</td>
+                                    <td>Row:48 Cell:3</td>
+                                    <td>Row:48 Cell:4</td>
+                                    <td>Row:48 Cell:5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Row:49 Cell:1</td>
+                                    <td>Row:49 Cell:2</td>
+                                    <td>Row:49 Cell:3</td>
+                                    <td>Row:49 Cell:4</td>
+                                    <td>Row:49 Cell:5</td>
+                                  </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!-- Import datatable javascript -->
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="plugins/datatables/dataTables.responsive.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            console.log("document ready");
+            // Custom JS & jQuery here
+            $('#my-table').DataTable({
+                responsive: true,
+                // pageLength:10,
+                sPaginationType: "full_numbers",
+                oLanguage: {
+                    oPaginate: {
+                        sFirst: '',
+                        sPrevious: '<i class="material-icons">chevron_left</i>',
+                        sNext: '<i class="material-icons">chevron_right</i></i>',
+                        sLast: ''
+                    }
+                }
+            });
+        });
+        $(window).on("load", function() {
+            console.log("window loaded");
+            
+        });
+
+    </script>
+</body>
+
+</html>
