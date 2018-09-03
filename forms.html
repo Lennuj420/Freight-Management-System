@@ -116,16 +116,26 @@
             <i class="material-icons">apps</i>
         </a>
         <ul>
-            <li>
-                <a href="#post-modal" class="btn-floating blue darken-2 modal-trigger">
-                      <!--<i class="material-icons">mode_edit</i>-->
-                    <!-- <i class="material-icons tooltipped" data-position="left" data-tooltip="add leave application">note_add</i> -->
-                    <!-- <i class="material-icons tooltipped" data-position="left" data-tooltip="add leave application">description</i> -->
-                    <i class="material-icons tooltipped" data-position="left" data-tooltip="add billing">assignment</i>
+          <li>
+              <a href="#post-modal" class="btn-floating blue darken-2 modal-trigger">
+                    <!--<i class="material-icons">mode_edit</i>-->
+                  <!-- <i class="material-icons tooltipped" data-position="left" data-tooltip="add leave application">note_add</i> -->
+                  <!-- <i class="material-icons tooltipped" data-position="left" data-tooltip="add leave application">description</i> -->
+                  <i class="fa fa-dropbox tooltipped" data-position="left" data-tooltip="add item"></i>
 
 
-                </a>
-            </li>
+              </a>
+          </li>
+          <li>
+              <a href="#post-modal" class="btn-floating blue darken-2 modal-trigger">
+                    <!--<i class="material-icons">mode_edit</i>-->
+                  <!-- <i class="material-icons tooltipped" data-position="left" data-tooltip="add leave application">note_add</i> -->
+                  <!-- <i class="material-icons tooltipped" data-position="left" data-tooltip="add leave application">description</i> -->
+                  <i class="material-icons tooltipped" data-position="left" data-tooltip="add billing">assignment</i>
+
+
+              </a>
+          </li>
           <li>
           <a href="#post-modal" class="btn-floating blue darken-2 modal-trigger">
                     <!--<i class="material-icons">mode_edit</i>-->
@@ -141,7 +151,7 @@
               </a>
           </li>
           <li>
-              <a href="#post-modal" class="btn-floating blue darken-2 modal-trigger">
+              <a href="#modal-add-booking" class="btn-floating blue darken-2 modal-trigger">
                   <!--<i class="material-icons">mode_edit</i>-->
                   <!-- <i class="material-icons tooltipped" data-position="left" data-tooltip="add booking">local_library</i> -->
                   <i class="material-icons tooltipped" data-position="left" data-tooltip="add booking">import_contacts</i>
@@ -509,6 +519,66 @@
           <a class="modal-action modal-close waves-effect waves-red btn-flat">add</a>
           </div>
     </div>
+
+    <!-- add booking -->
+    <div class="modal modal-fixed-footer" id="modal-add-booking">
+        <div class="modal-content row">
+          <div class="s12">
+            <h4>Add fleet</h4>
+          </div>
+          <div class="s12">
+              <form action="" class="row">
+                <div class="col s12 m6">
+                  <input type="file" class="dropify" data-default-file="">
+                  <!-- <label>Fleet Image</label> -->
+                </div>
+                  <div class="com s12 m6">
+                      <div class="input-field col s12 m6">
+                          <input type="text" id="title">
+                          <label>Plate Number</label>
+                          <!--TODO: transform input to uppercase-->
+                      </div>
+                      <div class="input-field col s12 m6 ">
+                          <select>
+                              <option value=" " disabled selected>Select Truck Type</option>
+                              <option value="1 ">{{6 Wheeler}}</option>
+                              <option value="2 ">{{Forward}}</option>
+                              <option value="3 " >{{10 Wheeler}}</option>
+                              <option value="4 ">{{AUV}}</option>
+                          </select>
+                          <label>Truck Type</label>
+                          <!--todo: get select option from database-->
+                          <!--todo: convert to search select-->
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="input-field col s12 m6">
+                          <input type="text" id="title">
+                          <label>Engine</label>
+                          <!--TODO: transform input to uppercase-->
+                          <!--convert to search select-->
+                      </div>
+                      <div class="input-field col s12 m6 ">
+                          <select>
+                              <option value=" " disabled selected>Select Owner</option>
+                              <option value="1 ">LERAN</option>
+                              <option value="2 ">ONG</option>
+                              <option value="3 " >SIPOCOT</option>
+                              <option value="4 ">BOLALIN</option>
+                          </select>
+                          <label>Owner</label>
+                          <!--todo: get select option from database-->
+                          <!--todo: convert to search select-->
+                          <!--todo: give ability to add owner if doesnt exist-->
+                      </div>
+                  </div>
+              </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-action modal-close waves-effect waves-red btn-flat">cancel</a>
+            <a class="modal-action modal-close waves-effect waves-red btn-flat">add</a>
+            </div>
+      </div>
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>

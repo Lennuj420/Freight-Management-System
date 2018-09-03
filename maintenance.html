@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!-- TODO: add bar chart for fuel cunsumption from past trips -->
     <head>
         <!--Import Google Icon Font-->
         <link href="css/material-icons.css" rel="stylesheet">
@@ -108,178 +108,92 @@
             </li>
         </ul>
         
-        <!-- floating action btn -->
-        <div class="fixed-action-btn click-to-toggle">
-            <a class="btn-floating btn-large green darken-2">
-                <i class="fa fa-plus"></i>
-                <!--<i class="material-icons">add</i>-->
-            </a>
-            <ul>
-                <li>
-                    <a href="#post-modal" class="btn-floating blue modal-trigger">
-                        <!--<i class="material-icons">mode_edit</i>-->
-                        <i class="fa fa-book"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#category-modal" class="btn-floating blue modal-trigger">
-                        <i class="material-icons">folder</i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#user-modal" class="btn-floating blue modal-trigger">
-                        <!--<i class="material-icons">supervisor_account</i>-->
-                        <i class="fa fa-user-o"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <!-- floating action btn -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large green darken-2">
+           <!-- <i class="fa fa-plus"></i> -->
+            <!--<i class="material-icons">add</i>-->
+            <i class="material-icons">apps</i>
+        </a>
+        <ul>
+          <li>
+              <a href="#post-modal" class="btn-floating blue darken-2 modal-trigger">
+                  <i class="fa fa-plus tooltipped" data-position="left" data-tooltip="add item"></i>
+              </a>
+          </li>
+        </ul>
+    </div>
 
         <!--Content Container-->
-        <!--<div class="container">-->
 
-        <!-- section stats -->
-        <!--
-        <div class="row">
-            <div class="col s12 m6 l3">
-                <div class="card-panel purple white-text center">
-                    <p><i class="fa fa-book"></i> Booking</p>
-                    <h5>64</h5>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card-panel red lighten-1 white-text center">
-                    <p><i class="fa fa-chevron-up"></i> Revenue</p>
-                    <h5 class="count">&#8369;103,342</h5>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card-panel amber darken-3 white-text center">
-                    <p><i class="fa fa-chevron-down"></i> Operation</p>
-                    <h5 class="count">&#8369;93,342</h5>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l3">
-                <div class="card-panel blue white-text center">
-                    <p><i class="fa fa-wrench"></i> Maintenance</p>
-                    <h5 class="count">&#8369;50,264</h5>
-                </div>
-            </div>
-        </div>
-        -->
-        
         <!--section tire change rotation-->
-        <div class="row">
-            <div class="col s12 m6">
+        <div class="row grey lighten-3">
+            <div class="col s12 m4">
                 <ul class="collection with-header">
                     <li class="collection-header center blue white-text">
-                        <h4>Change Tire Rotation</h4>
+                        <!-- <h4>Change Tire Rotation</h4> -->
+                        <h5>Change Tire Rotation</h5>
                     </li>
                     <li class="collection-item avatar">
-                        <i class="material-icons blue circle">contacts</i>
-                        <span class="title">EVL 912</span>
-                        <p>date: feb/4/2018</p>
+                        <!-- <i class="material-icons blue circle">contacts</i> -->
+                        <img src="/img/fleet/ACO 7047.JPG" alt="" class="responsive-img circle">
+                        <span class="title"><b>ACO7047</b></span>
+                        <p>Front: April 3, 2018</p>
+                        <p>Differential: February 5, 2018</p>
+                        <P>Rear: July 7, 2018</P>
                     </li>
-                    <li class="collection-item">Second Item</li>
-                    <li class="collection-item">Third Item</li>
-                    <li class="collection-item">Fourth Item</li>
+                    <li class="collection-item avatar">
+                        <!-- <i class="material-icons blue circle">contacts</i> -->
+                        <img src="/img/fleet/EVL912.jpg" alt="" class="responsive-img circle">
+                        <span class="title"><b>EVL912</b></span>
+                        <p>Front: January 3, 2018</p>
+                        <p>Differential: March 5, 2018</p>
+                        <P>Rear: May 7, 2018</P>
+                    </li>
                 </ul>
             </div>
             
-            <div class="col s1 m6">
+            <div class="col s1 m4">
                 <ul class="collection with-header">
-                   <li class="collection-header">
-                       <h4>this is the header</h4>
-                   </li>
-                    <li class="collection-item avatar">
-                        <i class="material-icons blue circle">contacts</i>
-                        <span class="title">John Doe</span>
-                        <p>jdoe@gmail.com
-
-                            555-555-5555 </p>
-                        <a href="#" class="secondary-content">
-                            <i class="material-icons">grade</i>
-                        </a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <i class="material-icons blue circle">contacts</i>
-                        <span class="title">Steve Smith</span>
-                        <p>jdoe@gmail.com
-
-                            555-555-5555 </p>
-                        <a href="#" class="secondary-content">
-                            <i class="material-icons">grade</i>
-                        </a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <i class="material-icons blue circle">contacts</i>
-                        <span class="title">Karen Mcdonald</span>
-                        <p>jdoe@gmail.com
-
-                            555-555-5555 </p>
-                        <a href="#" class="secondary-content">
-                            <i class="material-icons">grade</i>
-                        </a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <i class="material-icons blue circle">contacts</i>
-                        <span class="title">Kevin Mejia</span>
-                        <p>jdoe@gmail.com
-
-                            555-555-5555 </p>
-                        <a href="#" class="secondary-content">
-                            <i class="material-icons">grade</i>
-                        </a>
-                    </li>
+                  <li class="collection-header center cyan white-text">
+                    <!-- <h4>Change Oil Schedule</h4> -->
+                    <h5>Change Oil Schedule</h5>
+                  </li>
+                  <li class="collection-item avatar">
+                    <!-- <i class="material-icons blue circle">contacts</i> -->
+                    <img src="/img/fleet/EVL912-cropped.jpg" alt="" class="responsive-img circle">
+                    <span class="title"><b>EVL912</b></span>
+                    <p>Secheduled Date: December 25, 2018</p>
+                </li>
+                <li class="collection-item avatar">
+                  <!-- <i class="material-icons blue circle">contacts</i> -->
+                  <img src="/img/fleet/EVP842.jpg" alt="" class="responsive-img circle">
+                  <span class="title"><b>EVP842</b></span>
+                  <p>Secheduled Date: November 12, 2018</p>
+                </li>
                 </ul>
             </div>
-        </div>
-        
-        <!--bio data-->
-        <div class="row">
-            <div class="col s12 m6 l3">
-                <ul class="collection with-header">
-                    <li class="collection-header center teal white-text">
-                        <h5>Bio Data</h5>
-                    </li>
-                    <li class="collection-item row">
-                        <div class="col s5 left-align grey-text text-darken-2">
-                            Age:
-                        </div>
-                        <div class="col s7 right-align">
-                            <b>24</b>
-                        </div>
-                    </li>
-                    <li class="collection-item row">
-                        <div class="col s5 left-align grey-text text-darken-2">
-                            Birthday:
-                        </div>
-                        <div class="col s7 right-align">
-                            <b>January 21</b>
-                        </div>
-                    </li>
-                    <li class="collection-item row">
-                        <div class="col s5 left-align grey-text text-darken-2">
-                            Status:
-                        </div>
-                        <div class="col s7 right-align">
-                            <b>Married</b>
-                        </div>
-                    </li>
 
-                    <li class="collection-item row">
-                        <div class="col s5 left-align grey-text text-darken-2">
-                            Spouse:
-                        </div>
-                        <div class="col s7 right-align">
-                            <b>Samuel Jackson</b>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <div class="col s1 m4">
+              <ul class="collection with-header">
+                <li class="collection-header center indigo darken-4 white-text">
+                  <!-- <h4>Change Oil Schedule</h4> -->
+                  <h5>Repack Schedule</h5>
+                </li>
+                <li class="collection-item avatar">
+                  <!-- <i class="material-icons blue circle">contacts</i> -->
+                  <img src="/img/fleet/EVL912-cropped.jpg" alt="" class="responsive-img circle">
+                  <span class="title"><b>EVL912</b></span>
+                  <p>Secheduled Date: December 25, 2018</p>
+              </li>
+              <li class="collection-item avatar">
+                <!-- <i class="material-icons blue circle">contacts</i> -->
+                <img src="/img/fleet/EVP842.jpg" alt="" class="responsive-img circle">
+                <span class="title"><b>EVP842</b></span>
+                <p>Secheduled Date: November 12, 2018</p>
+              </li>
+              </ul>
+          </div>
         </div>
 
         <!--</div>-->
