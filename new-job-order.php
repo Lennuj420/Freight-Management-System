@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <!-- TODO: add button to confirm adding an item -->
   <!-- TODO: create "save button" to submit form -->
@@ -115,64 +115,64 @@
                 <b>Job Order No. 0568</b>
               </span>
             </div>
-              <form action="col s12">
-                <div class="row">
-                  <div class="input-field col s12 m3">
-                    <input type="text" id="job-order-date" class="datepicker">
-                    <label for="job-order-date">Date (mm/dd/yyy)</label>
-                  </div>
-                  <div class="input-field col s12 m3">
-                    <input type="text" id="plate-number">
-                    <label for="plate-number">Plate No.</label>
-                  </div>
-                  <div class="input-field col s12 m3">
-                    <input type="text" id="driver">
-                    <label>Driver</label>
-                  </div>
-                  <div class="input-field col s12 m3">
-                    <input type="text" id="">
-                    <label>Job Description</label>
-                  </div>
+            <form action="col s12">
+              <div class="row">
+                <div class="input-field col s12 m3">
+                  <input type="text" id="job-order-date" class="datepicker">
+                  <label for="job-order-date">Date (mm/dd/yyy)</label>
                 </div>
-                <div class="row">
-                  <div class="input-field col s7 m5">
-                    <input type="text">
-                    <label>Item Name</label>
-                  </div>
-                  <div class="input-field col s4 m1">
-                    <input type="text">
-                    <label>Qty</label>
-                  </div>
-                  <div class="clearfix"></div>
-                  <div class="input-field col s7 m5">
-                    <input type="text">
-                    <label>Item Name</label>
-                  </div>
-                  <div class="input-field col s4 m1">
-                    <input type="text">
-                    <label>Qty</label>
-                  </div>
-                  <div class="clearfix"></div>
-                  <div class="input-field col s7 m5">
-                    <input type="text">
-                    <label>Item Name</label>
-                  </div>
-                  <div class="input-field col s4 m1">
-                    <input type="text">
-                    <label>Qty</label>
-                  </div>
-                  <div class="clearfix"></div>
-                  <div class="input-field col s12">
-                    <!-- <a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a> -->
-                    <!-- <button type="button" class=" btn-small waves-effect waves-light red"><i class="material-icons">add</i></button> -->
-                    <button type="button" class=" btn-small waves-effect waves-light red">Add Item</button>
-                    
-                  </div>
-                  
+                <div class="input-field col s12 m3">
+                  <input type="text" id="plate-number">
+                  <label for="plate-number">Plate No.</label>
+                </div>
+                <div class="input-field col s12 m3">
+                  <input type="text" id="driver">
+                  <label>Driver</label>
+                </div>
+                <div class="input-field col s12 m3">
+                  <input type="text" id="">
+                  <label>Job Description</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s7 m5">
+                  <input type="text">
+                  <label>Item Name</label>
+                </div>
+                <div class="input-field col s4 m1">
+                  <input type="text">
+                  <label>Qty</label>
+                </div>
+                <div class="clearfix"></div>
+                <div class="input-field col s7 m5">
+                  <input type="text">
+                  <label>Item Name</label>
+                </div>
+                <div class="input-field col s4 m1">
+                  <input type="text">
+                  <label>Qty</label>
+                </div>
+                <div class="clearfix"></div>
+                <div class="input-field col s7 m5">
+                  <input type="text">
+                  <label>Item Name</label>
+                </div>
+                <div class="input-field col s4 m1">
+                  <input type="text">
+                  <label>Qty</label>
+                </div>
+                <div class="clearfix"></div>
+                <div class="input-field col s12">
+                  <!-- <a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+                  <!-- <button type="button" class=" btn-small waves-effect waves-light red"><i class="material-icons">add</i></button> -->
+                  <button type="button" class=" btn-small waves-effect waves-light red">Add Item</button>
 
                 </div>
-                <!-- table -->
-                <!-- <div class="col s12 m10 offset-l1">
+
+
+              </div>
+              <!-- table -->
+              <!-- <div class="col s12 m10 offset-l1">
                             <table class="stripe centered">
                                 <thead>
                                   <tr>
@@ -202,8 +202,8 @@
                             </table>
                         </div> -->
 
-                <!-- collection -->
-                <!-- <div class="col s12 m8 offset-m2 ">
+              <!-- collection -->
+              <!-- <div class="col s12 m8 offset-m2 ">
                             <ul class="collection with-header">
                                 <li class="collection-header"><h4>Items</h4></li>
                                 <li class="collection-item avatar">
@@ -232,7 +232,7 @@
                               </ul>
                         </div> -->
 
-              </form>
+            </form>
 
           </div>
         </div>
@@ -260,7 +260,7 @@
 
 
 
-
+        //init modal
         $(".modal").modal({
           dismissible: false, // Modal can be dismissed by clicking outside of the modal
           // opacity: .5, // Opacity of modal background
@@ -271,6 +271,7 @@
 
         });
 
+        //init datepicker
         $('.datepicker').datepicker({
           autoClose: true,
           // setDefaultDate: true,
@@ -306,16 +307,10 @@
             "Eman Nedia": null,
           },
         });
-        // $("select ").material_select({
-        //   // container: 'body'
-        // });
 
       });
       $(window).on("load", function () {
         console.log("window loaded");
-
-
-
 
       });
     </script>
