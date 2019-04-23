@@ -11,7 +11,7 @@
 
       <ul class="right hide-on-med-and-down">
         <li>
-          <a href="index.html" active>Dashboard</a>
+          <a href="index.php" active>Dashboard</a>
         </li>
         <li>
           <a href="post.html">Posts</a>

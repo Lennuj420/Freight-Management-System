@@ -1,108 +1,28 @@
-<!DOCTYPE html>
-<html>
-  <!-- TODO: add button to confirm adding an item -->
-  <!-- TODO: create "save button" to submit form -->
+<!-- <!DOCTYPE html> -->
+<html lang="en">
 
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!--Import Google Icon Font-->
-    <link href="css/material-icons.css" rel="stylesheet">
-    <!--Import Font Awesome Font-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css' />
-    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.css'/> -->
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css' /> -->
+    <link rel="stylesheet" href="./plugins/materialize/css/materialize.min.css">
     <link type="text/css" rel="stylesheet" href="css/main.css" />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Job Order No. 0568</title>
   </head>
 
-  <body class="grey lighten-5">
-    <!--nav-bar-->
-    <div class="navbar-fixed">
-      <nav class="green lighten-1">
-        <div class="nav-wrapper">
-          <a href="#" class="sidenav-trigger show-on-large" data-target="side-nav">
-            <i class="material-icons">menu</i>
-          </a>
-          <a href="#" class="brand-logo">FMS</a>
-        </div>
-      </nav>
-    </div>
-
-    <!--side-nav-->
-    <ul id="side-nav" class="sidenav">
-      <li>
-        <div class="user-view">
-          <div class="background">
-            <img src="img/bg-green-poly.jpg " alt="" class="responsive-img">
-          </div>
-          <div class="row">
-            <div class="col s4 m4 l4 xl4">
-              <img src="./img/user.png" alt="" class="circle">
-            </div>
-            <div class="col s8 m8 l8 xl8">
-              <span class="name white-text">
-                Junnel Doe
-              </span>
-              <span class="email white-text">
-                junnel@email.com
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li>
-        <a href="dashboard.html">
-          <i class="material-icons">dashboard</i> Dashboard
-        </a>
-      </li>
-      <li class="active">
-        <a href="maintenance.html">
-          <i class="material-icons">build</i>
-          Maintenance
-        </a>
-      </li>
-      <li>
-        <a href="categories.html">
-          <i class="material-icons">folder</i> Categories
-        </a>
-      </li>
-      <li>
-        <a href="comments.html">
-          <i class="material-icons">comment</i> Comments
-        </a>
-      </li>
-      <li>
-        <a href="users.html">
-          <i class="material-icons">people</i> Users
-        </a>
-      </li>
-      <li>
-        <div class="divider"></div>
-      </li>
-      <li>
-        <a href="#">
-          <i class="material-icons">vpn_key</i> Logout
-        </a>
-      </li>
-    </ul>
-
-    <!-- floating action btn -->
-    <div class="fixed-action-btn">
-      <a class="btn-floating btn-large green darken-2">
-        <i class="material-icons">build</i>
-      </a>
-      <ul>
-        <!-- <li>
-              <a href="#modal-job-order" class="btn-floating blue darken-2 modal-trigger">
-                  <i class="fa fa-plus tooltipped" data-position="left" data-tooltip="New Job Order"></i>
-              </a>
-          </li> -->
-      </ul>
-    </div>
+  <body>
+    <?php 
+    include 'top-nav.php';
+    include 'side-nav.php';
+  ?>
 
     <!--section-->
     <div class="row">
@@ -117,9 +37,9 @@
             </div>
             <form action="col s12">
               <div class="row">
-                <div class="input-field col s12 m3">
+                <div class="input-field col s12 m3 ">
                   <input type="text" id="job-order-date" class="datepicker">
-                  <label for="job-order-date">Date (mm/dd/yyy)</label>
+                  <label for="job-order-date">Date</label>
                 </div>
                 <div class="input-field col s12 m3">
                   <input type="text" id="plate-number">
@@ -163,113 +83,50 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="input-field col s12">
-                  <!-- <a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a> -->
-                  <!-- <button type="button" class=" btn-small waves-effect waves-light red"><i class="material-icons">add</i></button> -->
                   <button type="button" class=" btn-small waves-effect waves-light red">Add Item</button>
-
                 </div>
-
-
               </div>
-              <!-- table -->
-              <!-- <div class="col s12 m10 offset-l1">
-                            <table class="stripe centered">
-                                <thead>
-                                  <tr>
-                                      <th>Name</th>
-                                      <th>Quantity</th>
-                                      <th>Price</th>
-                                  </tr>
-                                </thead>
-                        
-                                <tbody>
-                                  <tr>
-                                    <td>Alvin</td>
-                                    <td>Eclair</td>
-                                    <td>$0.87</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Alan</td>
-                                    <td>Jellybean</td>
-                                    <td>$3.76</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Jonathan</td>
-                                    <td>Lollipop</td>
-                                    <td>$7.00</td>
-                                  </tr>
-                                </tbody>
-                            </table>
-                        </div> -->
-
-              <!-- collection -->
-              <!-- <div class="col s12 m8 offset-m2 ">
-                            <ul class="collection with-header">
-                                <li class="collection-header"><h4>Items</h4></li>
-                                <li class="collection-item avatar">
-                                    <img src="images/yuna.jpg" alt="" class="circle">
-                                    <p>
-                                        <span class="title"><b>Brake & Clutch Fluid</b></span>
-                                        <br>
-                                        qty: 300 ml
-                                    </p>
-                                    <a href="#!" class="secondary-content"><i class="material-icons">delete</i></a>
-                                  </li>
-                                <li class="collection-item">
-                                  <div>
-                                    Bulb 24v Single Small
-                                    <a href="#!" class="secondary-content"><i class="material-icons">info</i></a>
-                                    <a href="#!" class="secondary-content"><i class="material-icons">delete</i></a>
-                                  </div>
-                                </li>
-                                <li class="collection-item">
-                                  <div>Bulb 24v Double Big
-                                      <a href="#!" class="secondary-content"><i class="material-icons">info</i></a>
-                                      <a href="#!" class="secondary-content"><i class="material-icons">delete</i></a>
-                                  </div>
-                                </li>
-                                <li class="collection-item"><div>Battery Terminal<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
-                              </ul>
-                        </div> -->
-
             </form>
-
           </div>
         </div>
       </div>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js'></script>
-    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.js'></script> -->
-    <script src="js/chart.js"></script>
-    <script src="js/Chart 2.7.2.min.js"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js'></script> -->
+    <script src="./plugins/materialize/js/materialize.min.js"></script>
+
     <script>
       $(document).ready(function () {
-        console.log("document ready");
         // Custom JS & jQuery here
 
-        //initialize side-nav
-        $('.sidenav').sidenav({
 
+        //initialize side-nav
+        $(".sidenav").sidenav({
+          draggable: true
         });
+
         //init fab
         $('.fixed-action-btn').floatingActionButton();
-
-
-
-        //init modal
-        $(".modal").modal({
-          dismissible: false, // Modal can be dismissed by clicking outside of the modal
-          // opacity: .5, // Opacity of modal background
-          inDuration: 300, // Transition in duration
-          outDuration: 200, // Transition out duration
-          startingTop: '4%', // Starting top style attribute
-          endingTop: '10%', // Ending top style attribute
-
-        });
 
         //init datepicker
         $('.datepicker').datepicker({
@@ -297,7 +154,6 @@
             "EVT191": null
           },
         });
-
         $('input#driver').autocomplete({
           data: {
             "Harold Jose Buendia": null,
@@ -307,11 +163,6 @@
             "Eman Nedia": null,
           },
         });
-
-      });
-      $(window).on("load", function () {
-        console.log("window loaded");
-
       });
     </script>
   </body>
