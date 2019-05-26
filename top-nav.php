@@ -10,7 +10,7 @@
       <a href="#" class="brand-logo">FMS</a>
 
       <ul class="right hide-on-med-and-down">
-        <li>
+        <!-- <li>
           <a href="index.php" active>Dashboard</a>
         </li>
         <li>
@@ -27,7 +27,7 @@
         </li>
         <li>
           <a href="employee.html">Employee</a>
-        </li>
+        </li> -->
         <li>
           <a href="#!">
             <span class="avatar-status">

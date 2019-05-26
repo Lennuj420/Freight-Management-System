@@ -5,19 +5,19 @@
       <div class="background">
         <img src="img/bg-green-poly.jpg " alt="" class="responsive-img">
       </div>
-      <div class="row">
-
-        <div class="col s4 m4 l4 xl4">
-          <img src="./img/user.png" alt="" class="circle">
-
-        </div>
-        <div class="col s8 m8 l8 xl8">
-          <span class="name white-text">
-            Junnel Doe
-          </span>
-          <span class="email white-text">
-            junnel@email.com
-          </span>
+      <div class="valign-wrapper">
+        <div class="row">
+          <div class="col s4 m4 l4 xl4">
+            <img src="./img/user.png" alt="" class="circle">
+          </div>
+          <div class="col s8 m8 l8 xl8">
+            <span class="name white-text">
+              Junnel Doe
+            </span>
+            <span class="email white-text">
+              junnel@email.com
+            </span>
+          </div>
         </div>
       </div>
     </div>
