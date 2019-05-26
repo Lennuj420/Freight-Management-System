@@ -13,15 +13,26 @@
     <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css' /> -->
 
     <link rel="stylesheet" href="./plugins/dropify/dist/css/dropify.css">
-
+    
     <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <style>
+      header, main, footer {
+        padding-left: 300px;
+      }
+
+      @media only screen and (max-width : 992px) {
+        header, main, footer {
+          padding-left: 0;
+        }
+      }
+    </style>
 
 
     <title>new item</title>
   </head>
 
   <body>
-    <?php 
+    <?php
     include 'top-nav.php';
     include 'side-nav.php';
   ?>

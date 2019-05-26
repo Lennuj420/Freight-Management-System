@@ -1,9 +1,9 @@
 <!--nav-bar-->
 <!-- <div class="navbar-fixed"> -->
   <nav class="green lighten-1">
-    <div class="nav-wrapper ">
+    <div class="nav-wrapper">
 
-      <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
+      <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large">
       <i class="material-icons">menu</i>
       </a>
 

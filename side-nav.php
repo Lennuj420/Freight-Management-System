@@ -1,5 +1,5 @@
 <!--side-nav-->
-<ul id="slide-out" class="sidenav">
+<ul id="slide-out" class="sidenav sidenav-fixed"">
   <li>
     <div class="user-view">
       <div class="background">

@@ -1,9 +1,21 @@
 /*side nav fix*/
-/*
-#side-nav{
+
+.sidenav{
     margin-top: 64px;
 }
-*/
+
+.wrapper{
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  .sidenav{
+    margin-top: 0;
+}
+  .wrapper{
+    padding-left: 0;
+  }
+}
 .login {
     margin-top: 20%;
     margin-bottom: 70px;

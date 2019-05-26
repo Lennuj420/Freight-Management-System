@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="./plugins/dropify/dist/css/dropify.css">
 
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css" />
 
 
     <title>New Emplyee</title>
@@ -24,10 +24,10 @@
     <?php 
     include 'top-nav.php';
     include 'side-nav.php';
-  ?>
+    ?>
 
     <!--section-->
-    <div class="row">
+    <div class="wrapper row">
       <div class="col s12 l10 offset-l1 xl8 offset-xl2">
         <div class="card">
           <div class="card-content">
