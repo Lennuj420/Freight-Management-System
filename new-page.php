@@ -22,6 +22,8 @@
     include 'side-nav.php';
   ?>
 
+  <!--container elements beside fixed sidenav-->
+  <div class="wrapper">
 
 
 
@@ -35,6 +37,10 @@
 
 
 
+
+
+
+  </div>
 
 
 

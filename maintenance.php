@@ -18,75 +18,10 @@
     </head>
 
     <body>
-        <!--nav-bar-->
-        <div class="navbar-fixed">
-            <nav class="green lighten-1">
-                <div class="nav-wrapper">
-                    <a href="#" class="sidenav-trigger show-on-large" data-target="side-nav">
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <a href="#" class="brand-logo">FMS</a>
-                </div>
-            </nav>
-        </div>
-
-        <!--side-nav-->
-        <ul id="side-nav" class="sidenav">
-            <li>
-                <div class="user-view">
-                    <div class="background">
-                        <img src="img/bg-green-poly.jpg " alt="" class="responsive-img">
-                    </div>
-                    <div class="row">
-                        <div class="col s4 m4 l4 xl4">
-                            <img src="./img/user.png" alt="" class="circle">
-                        </div>
-                        <div class="col s8 m8 l8 xl8">
-                            <span class="name white-text">
-                                Junnel Doe
-                            </span>
-                            <span class="email white-text">
-                                junnel@email.com
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <a href="dashboard.html">
-                    <i class="material-icons">dashboard</i> Dashboard
-                </a>
-            </li>
-            <li class="active">
-                <a href="maintenance.html">
-                    <i class="material-icons">build</i>
-                    Maintenance
-                </a>
-            </li>
-            <li>
-                <a href="categories.html">
-                    <i class="material-icons">folder</i> Categories
-                </a>
-            </li>
-            <li>
-                <a href="comments.html">
-                    <i class="material-icons">comment</i> Comments
-                </a>
-            </li>
-            <li>
-                <a href="users.html">
-                    <i class="material-icons">people</i> Users
-                </a>
-            </li>
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="material-icons">vpn_key</i> Logout
-                </a>
-            </li>
-        </ul>
+    <?php 
+      include 'top-nav.php';
+      include 'side-nav.php';
+    ?>
 
          <!-- floating action btn -->
     <div class="fixed-action-btn">
@@ -104,8 +39,8 @@
     </div>
 
         <!--Content Container-->
-
-        <!--section tire change rotation-->
+        <div class="wrapper">
+                  <!--section tire change rotation-->
         <div class="row grey lighten-3">
             <div class="col s12 m4">
                 <ul class="collection with-header">
@@ -246,10 +181,6 @@
                           <li class="collection-item"><div>Battery Terminal<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
                         </ul>
                   </div>
-                  
-
-
-
             </form>
             </div>
           </div>
@@ -258,6 +189,9 @@
           <a class="modal-action modal-close waves-effect waves-red btn">add</a>
           </div>
         </div>
+        </div>
+
+
 
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>

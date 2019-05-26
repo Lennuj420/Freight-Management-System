@@ -23,12 +23,12 @@
     </div>
   </li>
   <li class="active">
-    <a href="index.html">
+    <a href="index.php">
       <i class="material-icons">dashboard</i> Dashboard
     </a>
   </li>
   <li class="">
-    <a href="maintenance.html">
+    <a href="maintenance.php">
       <!--<i class="fa fa-wrench"></i>-->
       <i class="material-icons">build</i>
       Maintenance

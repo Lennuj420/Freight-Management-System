@@ -51,8 +51,9 @@
     <!--Content Container-->
     <!--<div class="container">-->
 
-    <!-- section stats -->
-    <div class="row">
+<div class="wrapper">
+      <!-- section stats -->
+      <div class="row">
       <div class="col s6 m6 l3">
         <div class="card-panel purple white-text center">
           <p><i class="fa fa-book"></i> Booking</p>
@@ -161,6 +162,7 @@
       </div>
     </div>
     <!--</div>-->
+</div>
 
 
     <!--Import jQuery before materialize.js-->

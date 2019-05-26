@@ -7,7 +7,7 @@
       <i class="material-icons">menu</i>
       </a>
 
-      <a href="#" class="brand-logo">FMS</a>
+      <a href="/index.php" class="brand-logo">FMS</a>
 
       <ul class="right hide-on-med-and-down">
         <!-- <li>
