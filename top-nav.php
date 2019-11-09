@@ -1,5 +1,5 @@
 <!--nav-bar-->
-<!-- <div class="navbar-fixed"> -->
+<div class="navbar">
   <nav class="green lighten-1">
     <div class="nav-wrapper">
 
@@ -38,4 +38,4 @@
       </ul>
     </div>
   </nav>
-<!-- </div> -->
+</div>

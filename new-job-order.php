@@ -6,26 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
-    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css' /> -->
-    <link rel="stylesheet" href="./plugins/materialize/css/materialize.min.css">
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <?php
+    include "local-css-import.php";
+    ?>
 
 
     <title>Job Order No. 0568</title>
   </head>
 
   <body>
-    <?php 
+    <?php
     include 'top-nav.php';
     include 'side-nav.php';
   ?>
 
     <!--section-->
-    <div class="row">
+    <div class="wrapper row">
       <div class="col s12 m10 offset-m1 l8 offset-l2">
         <div class="card">
           <div class="card-content">
@@ -109,11 +105,9 @@
 
 
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js'></script> -->
-    <script src="./plugins/materialize/js/materialize.min.js"></script>
+    <?php
+    include "local-js-import.php";
+    ?>
 
     <script>
       $(document).ready(function () {

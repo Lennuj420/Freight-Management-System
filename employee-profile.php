@@ -2,14 +2,10 @@
 <html>
 
   <head>
-    <!--Import Google Icon Font-->
-    <link href="css/material-icons.css" rel="stylesheet">
-    <!--Import Font Awesome Font-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" href="./plugins/datatables/datatables.css">
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <?php
+    include "local-css-import.php";
+    ?>
+    <!-- <link rel="stylesheet" href="./plugins/datatables/datatables.css"> -->
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,107 +13,10 @@
   </head>
 
   <body>
-    <!--nav-bar-->
-    <div class="navbar-fixed">
-      <nav class="green lighten-1">
-        <div class="nav-wrapper ">
-          <a href="#" class="button-collapse show-on-large" data-activates="side-nav">
-            <i class="material-icons">menu</i>
-          </a>
-          <!--<div class="container">-->
-          <a href="#" class="brand-logo">FMS</a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="index.html" active>Dashboard</a>
-            </li>
-            <li>
-              <a href="post.html">Posts</a>
-            </li>
-            <li>
-              <a href="categories.html">Categories</a>
-            </li>
-            <li>
-              <a href="comments.html">Comments</a>
-            </li>
-            <li>
-              <a href="users.html">Users</a>
-            </li>
-            <li>
-              <a href="employee.html">Employee</a>
-            </li>
-            <li>
-              <a href="#!">
-                <span class="avatar-status">
-                  <img src="./img/person1.jpg" alt="">
-                </span>
-              </a>
-            </li>
-          </ul>
-          <!--</div>-->
-        </div>
-      </nav>
-    </div>
-
-    <!--side-nav-->
-    <ul id="side-nav" class="side-nav">
-      <li>
-        <div class="user-view">
-          <div class="background">
-            <img src="img/bg-green-poly.jpg " alt="" class="responsive-img">
-          </div>
-          <div class="row">
-
-            <div class="col s4 m4 l4 xl4">
-              <img src="./img/user.png" alt="" class="circle">
-
-            </div>
-            <div class="col s8 m8 l8 xl8">
-              <span class="name white-text">
-                Junnel Doe
-              </span>
-              <span class="email white-text">
-                junnel@email.com
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="active">
-        <a href="index.html">
-          <i class="material-icons">dashboard</i> Dashboard
-        </a>
-      </li>
-      <li class="">
-        <a href="maintenance.html">
-          <!--<i class="fa fa-wrench"></i>-->
-          <i class="material-icons">build</i>
-          Maintenance
-        </a>
-      </li>
-      <li>
-        <a href="categories.html">
-          <i class="material-icons">folder</i> Categories
-        </a>
-      </li>
-      <li>
-        <a href="comments.html">
-          <i class="material-icons">comment</i> Comments
-        </a>
-      </li>
-      <li>
-        <a href="users.html">
-          <i class="material-icons">people</i> Users
-        </a>
-      </li>
-      <li>
-        <div class="divider"></div>
-      </li>
-      <li>
-        <a href="#">
-          <i class="material-icons">vpn_key</i> Logout
-        </a>
-      </li>
-    </ul>
+    <?php 
+    include 'top-nav.php';
+    include 'side-nav.php';
+    ?>
 
     <!-- floating action btn -->
     <div class="fixed-action-btn click-to-toggle">
@@ -146,9 +45,13 @@
       </ul>
     </div>
 
-    <!--profile card-->
+    <div class="wrapper">
+          <!--profile card-->
     <div class="row">
       <div class="col s12 l12">
+      <li class="collection-header center teal white-text">
+            <h5>Bio Data</h5>
+          </li> 
         <div class="card">
           <div class="card-image teal">
             <div class="profile-card-bg">
@@ -247,20 +150,23 @@
         </ul>
       </div>
     </div>
+    </div>
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <?php
+    include "local-js-import.php";
+    ?>
     <script src="js/chart.js"></script>
     <script src="js/Chart 2.7.2.min.js"></script>
-    <script src="plugins/datatables/datatables.js"></script>
+    <!-- <script src="plugins/datatables/datatables.js"></script> -->
     <script>
       $(document).ready(function () {
         console.log("document ready");
         // Custom JS & jQuery here
 
         //initialize side-nav
-        $(".button-collapse").sideNav();
+        $(".sidenav").sidenav({
+          draggable: true
+        });
 
 
 
@@ -329,7 +235,7 @@
           // searching: false,
           // ordering:  false
         }
-        $("#my-table").DataTable(myTableOptions);
+        // $("#my-table").DataTable(myTableOptions);
       });
     </script>
   </body>

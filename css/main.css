@@ -1,20 +1,27 @@
 /*side nav fix*/
 
-.sidenav{
+/* .sidenav{
     margin-top: 64px;
-}
+} */
 
 .wrapper{
   padding-left: 300px;
 }
+/* .navbar{
+  padding-left: 300px;
+} */
 
 @media only screen and (max-width : 992px) {
-  .sidenav{
+  /* .sidenav{
     margin-top: 0;
-}
+} */
   .wrapper{
     padding-left: 0;
   }
+  /* .navbar{
+    padding-left: 0;
+  } */
+  
 }
 .login {
     margin-top: 20%;

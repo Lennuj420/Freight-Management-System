@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="./plugins/materialize/css/materialize.min.css" media="screen,projection" />
-    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css' /> -->
+    <?php
+    include "local-css-import.php";
+    ?>
 
     <link rel="stylesheet" href="./plugins/dropify/dist/css/dropify.css">
 
@@ -162,9 +160,9 @@
 
 
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="./plugins/materialize/js/materialize.min.js"></script>
+    <?php
+    include "local-js-import.php";
+    ?>
     <script src="./plugins/dropify/dist/js/dropify.js"></script>
     <script type="text/javascript" src="./plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
     <script>

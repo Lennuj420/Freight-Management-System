@@ -1,5 +1,5 @@
 <!--side-nav-->
-<ul id="slide-out" class="sidenav sidenav-fixed"">
+<ul id="slide-out" class="sidenav sidenav-fixed">
   <li>
     <div class="user-view">
       <div class="background">
@@ -12,10 +12,10 @@
           </div>
           <div class="col s8 m8 l8 xl8">
             <span class="name white-text">
-              Junnel Doe
+              FirstName LastName
             </span>
-            <span class="email white-text">
-              junnel@email.com
+            <span class="email white-text" >
+              Pangalan@Mahabang_Domain.com
             </span>
           </div>
         </div>
@@ -35,20 +35,31 @@
     </a>
   </li>
   <li>
-    <a href="categories.html">
-      <i class="material-icons">folder</i> Categories
+    <a href="#">
+       <!--<i class="fa fa-wrench"></i>-->
+      <i class="material-icons">widgets</i> Inventory
     </a>
   </li>
-  <li>
+  <!-- <li>
     <a href="comments.html">
       <i class="material-icons">comment</i> Comments
     </a>
-  </li>
+  </li> -->
+  
+  
+  <!-- NOTE: this is for office staff only -->
   <li>
-    <a href="employees.html">
+    <a href="employee.html">
       <i class="material-icons">people</i> Employees
     </a>
   </li>
+
+  <li>
+    <a href="employee-profile.php">
+      <i class="material-icons">person</i>My Profile
+    </a>
+  </li>
+
   <li>
     <div class="divider"></div>
   </li>
